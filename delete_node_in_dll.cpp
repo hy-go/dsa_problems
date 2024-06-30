@@ -1,3 +1,22 @@
+// 30th June 2024
+// Delete node in Doubly Linked List
+
+/*
+Given a doubly Linked list and a position. The task is to delete a node from a given position (position starts from 1) in a doubly linked list and return the head of the doubly Linked list. 
+
+Example1:
+  Input:
+      LinkedList = 1 <--> 3 <--> 4, x = 3
+  Output: 
+      1 3  
+
+Example2:
+  Input: 
+    LinkedList = 1 <--> 5 <--> 2 <--> 9, x = 1
+  Output: 
+    5 2 9
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
