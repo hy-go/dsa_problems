@@ -69,15 +69,6 @@ int main() {
     return 0;
 }
 
-struct Node {
-  int data;
-  struct Node *next;
-  Node(int x) {
-    data = x;
-    next = NULL;
-  }
-};
-
 // Function to check whether two linked lists are identical or not.
 bool areIdentical(struct Node *head1, struct Node *head2) {
     if(!head1 && !head2)
