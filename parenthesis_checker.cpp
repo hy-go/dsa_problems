@@ -32,7 +32,6 @@ using namespace std;
 class Solution
 {
     public:
-    //Function to check if brackets are balanced or not.
     bool ispar(string x) {
         stack<char> stk;
         for(char c: x) {
