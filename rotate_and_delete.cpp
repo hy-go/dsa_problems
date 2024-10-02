@@ -60,6 +60,18 @@ class Solution {
                 j = (j - 1 + n) % n;
         return arr[j];
     }
+
+    // Alternate solution (without any analysis, also, I believe this is not O(n))
+    int rotateDelete_2(vector<int> &arr) {
+        int i = 1;
+            int n = arr.size();
+            while (i < (n / 2) + 1) {
+                rotate(arr.begin(), arr.end() - 1, arr.end());
+                arr.erase(arr.begin() + (arr.size() - i));
+                i++;
+            }
+        return arr[0];
+    }
 };
 
 int main() {
